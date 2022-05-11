@@ -1,0 +1,40 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2022-05-11T08:58:55.885Z",
+    "redirects": [
+        {
+            "description": "Google Meet link - redirection to next account",
+            "exampleUrl": "https://meet.google.com/aaa-aaaa-aaa",
+            "exampleResult": "https://meet.google.com/aaa-aaaa-aaa?authuser=1",
+            "error": null,
+            "includePattern": "https://meet.google.com/*-*-*",
+            "excludePattern": "",
+            "patternDesc": "You might have 2 accounts logged in on your PC - one is your school account, and one is your personal account. This redirect redirects all Google Meet meeting links to school accounts. Does not apply to normal meet.google.com links.",
+            "redirectUrl": "https://meet.google.com/$1-$2-$3?authuser=1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Redirect Google Classroom to second account logged in to your PC",
+            "exampleUrl": "https://classroom.google.com",
+            "exampleResult": "classroom.google.com/u/1/h",
+            "error": null,
+            "includePattern": "https://class*.google.com",
+            "excludePattern": "",
+            "patternDesc": "You might have 2 accounts logged in on your PC - one is your school account, and one is your personal account. This redirect redirects Google Classroom homepage (classroom.google.com) to school accounts. Does not apply to normal other links for tasks.",
+            "redirectUrl": "class$1.google.com/u/1/h",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}

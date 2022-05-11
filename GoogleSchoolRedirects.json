@@ -1,6 +1,6 @@
 {
-    "createdBy": "Redirector v3.5.3",
-    "createdAt": "2022-05-11T08:58:55.885Z",
+    "createdBy": "weareblahs through Redirector v3.5.3",
+    "createdAt": "2022-05-11T09:02:31.639Z",
     "redirects": [
         {
             "description": "Google Meet link - redirection to next account",
@@ -21,13 +21,13 @@
         },
         {
             "description": "Redirect Google Classroom to second account logged in to your PC",
-            "exampleUrl": "https://classroom.google.com",
-            "exampleResult": "classroom.google.com/u/1/h",
+            "exampleUrl": "https://classroom.google.com/",
+            "exampleResult": "https://classroom.google.com/u/1/",
             "error": null,
-            "includePattern": "https://class*.google.com",
+            "includePattern": "https://*room.google.com/",
             "excludePattern": "",
             "patternDesc": "You might have 2 accounts logged in on your PC - one is your school account, and one is your personal account. This redirect redirects Google Classroom homepage (classroom.google.com) to school accounts. Does not apply to normal other links for tasks.",
-            "redirectUrl": "class$1.google.com/u/1/h",
+            "redirectUrl": "https://$1room.google.com/u/1/",
             "patternType": "W",
             "processMatches": "noProcessing",
             "disabled": false,

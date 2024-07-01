@@ -1,0 +1,16 @@
+.body-home {
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+}
+
+.chinese {
+  font-family: "MingLiU", "DFKai-sb", serif, sans-serif;
+}

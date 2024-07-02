@@ -1,34 +1,40 @@
-function english() {
-  title = "diploma mouse";
-  term1 = ["corn", "wheat", "sprout"];
-  term2 = ["care", "moral", "labour"];
-  term3 = ["soil", "country", "rural area"];
-  term4 = ["toilet", "straight", "last"];
-
-  line1 = "diploma mouse diploma mouse, no eat me ";
-  line2 = "three year feed you, no me want ";
-  line3 = "pass general go you, suitable me happy ";
-  line4term = "happy ";
+function chinese() {
+  title = "關雎";
+  author = "未知";
+  comma = "，";
+  dot = "。";
+  // lines 1 and 2
+  part1text = ["關關雎鳩，在河之洲。\n", "參差荇菜，左右流之。\n"];
+  term1 = "窈窕淑女";
+  part2text = ["君子好逑", "寤寐求之"];
   text = "";
-  author = "by a wise chinese man";
-  for (let i = 0; i < 3; i++) {
-    text += "";
-    text += line1 + term1[i] + "!\n";
-    text += line2 + term2[i] + ".\n";
-    text += line3 + term3[i] + ".\n";
-    if (term4[i] != "last") {
-      line4text = "love got me " + term4[i] + ".\n";
-    } else {
-      line4text = "who forever call?";
-    }
+  for (let i = 0; i < 2; i++) {
+    text += part1text[i] + term1 + comma + part2text[i] + dot + "\n";
+  }
+  // line 3
+  line3text = "求之不得，寤寐思服。\n";
+  line3text2 = "悠哉";
+  line3text3 = "輾轉反側";
+  text += line3text + line3text2 + line3text2 + comma + line3text3 + dot + "\n";
+
+  // lines 4 and 5
+  part1text2 = "參差荇菜，左右";
+  term2 = ["采", "芼"];
+  // use back term 1
+  term3 = ["琴瑟友", "鐘鼓樂"];
+  part2text2 = "之";
+  for (let i = 0; i < 2; i++) {
     text +=
-      line4term +
+      part1text2 +
+      term2[i] +
+      part2text2 +
+      dot +
+      "\n" +
+      term1 +
+      comma +
       term3[i] +
-      " " +
-      line4term +
-      term3[i] +
-      ", " +
-      line4text +
+      part2text2 +
+      dot +
       "\n";
   }
   htmlText = text.replace(/(?:\r\n|\r|\n)/g, "<br>");
@@ -36,33 +42,52 @@ function english() {
   return finalArray;
 }
 
-function chinese() {
-  title = "碩鼠";
-  term1 = ["黍", "麥", "苗"];
-  term2 = ["顧", "德", "勞"];
-  term3 = ["土", "國", "郊"];
-  term4 = ["所", "直", "last"];
-
-  line1 = "碩鼠碩鼠，無食我";
-  line2 = "三歲貫女，莫我肯";
-  line3 = "逝將去女，適彼樂";
-  line4term = "樂";
+function english() {
+  title = "close dove";
+  author = "by a wise chinese man";
+  comma = ", ";
+  dot = ".";
+  // lines 1 and 2
+  part1text = [
+    "close close hawk dove, state at river.\n",
+    "scattered veggie, left right flow.\n",
+  ];
+  term1 = "beautiful girl";
+  part2text = ["young man like", "sleep sleep also want"];
   text = "";
-  author = "未知";
-  for (let i = 0; i < 3; i++) {
-    text += "";
-    text += line1 + term1[i] + "！\n";
-    text += line2 + term2[i] + "。\n";
-    text += line3 + term3[i] + "。\n";
-    if (term4[i] != "last") {
-      line4text = "爰得我" + term4[i] + "。\n";
-    } else {
-      line4text = "誰之永號？";
-    }
+  for (let i = 0; i < 2; i++) {
+    text += part1text[i] + term1 + comma + part2text[i] + dot + "\n";
+  }
+  // line 3
+  line3text = "cannot ask, sleep sleep think think.\n";
+  line3text2 = "cincai";
+  line3text3 = "flip come flip go";
+  text +=
+    line3text + line3text2 + " " + line3text2 + comma + line3text3 + dot + "\n";
+
+  // lines 4 and 5
+  part1text2 = "scattered veggie, left right ";
+  term2 = ["pick", "bud"];
+  // use back term 1
+  term3 = ["violin harp friend", "bell drum happy"];
+  part2text2 = "";
+  for (let i = 0; i < 2; i++) {
     text +=
-      line4term + term3[i] + line4term + term3[i] + "，" + line4text + "\n";
+      part1text2 +
+      term2[i] +
+      part2text2 +
+      dot +
+      "\n" +
+      term1 +
+      comma +
+      term3[i] +
+      part2text2 +
+      dot +
+      "\n";
   }
   htmlText = text.replace(/(?:\r\n|\r|\n)/g, "<br>");
   finalArray = [title, author, htmlText];
   return finalArray;
 }
+
+console.log(english());

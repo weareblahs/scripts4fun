@@ -390,11 +390,11 @@ function english() {
   for (let i = 0; i < 4; i++) {
     if (line12[i].length != 3) {
       if (line12[i] == line12[3]) {
-        text += thoselines[i] + dot + seperator;
+        text += line12[i] + dot + seperator;
       } else if (line12[i] == line12[1]) {
-        text += thoselines[i] + comma + seperator;
+        text += line12[i] + comma + seperator;
       } else {
-        text += thoselines[i] + comma;
+        text += line12[i] + comma;
       }
     } else {
       if (line12[i] != line12[1]) {
